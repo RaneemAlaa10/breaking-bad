@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    
+}
+:root
+{
+   --white:rgb(255, 255, 255);
+   --black:rgb(0, 0, 0);
+}
+body
+{
+    overflow-x: hidden;
+}
+.item
+{
+    height: 300px;
+    background-color: var(--white);
+    color: var(--black);
+}
+#Seasons {
+    appearance:none;
+    outline:0;
+    border: 0;
+    background: #f8f9fa;
+    flex: 1;
+    padding: 0 10px;
+    color:black;
+    cursor:pointer;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+ }
+ #Season::-ms-expand {
+    display: none;
+ }
+ #select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ #select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #c6c7c8;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ #select:hover::after {
+    color: #1F6032;
+ }
+ .bt
+ {
+    border: 1px solid #5c6664!important
+ }
+ .modeContainer
+{
+   color: black;
+}
+.modeContainer p
+{
+   margin-left: 5px;
+   font-size: 20px;
+}
+.modeContainer:hover
+{
+   color: #1F6032;
+   cursor: pointer;
+}
+span
+{
+    background-color: rgba(255, 255, 0,0.9)
+}

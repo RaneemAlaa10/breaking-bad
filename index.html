@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Breaking Bad</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+    <div id="mode" class="modeContainer d-flex justify-content-end mx-5 p-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+        <p>Mode</p>
+    </div>
+    <div class="container d-flex justify-content-center my-3">
+        <div id="select">
+            <select id="Seasons" name="format">
+                <option selected disabled>Choose Season</option>
+                <option value="season1">Season 1</option>
+                <option value="season2">Season 2</option>
+                <option value="season3">Season 3</option>
+                <option value="season4">Season 4</option>
+                <option value="season5">Season 5</option>
+            </select>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center mt-2">
+        <a id="ClickSeason" class="bt btn btn-light">Display Season</a>
+        <a id="ClickBtn" class="bt btn mx-3 btn-light">Display all episods</a>
+    </div>
+    <div class="container mt-2 d-flex justify-content-center">
+        <div class="container w-50">
+            <div class="logo w-50 d-flex justify-content-center m-auto">
+                <h2 id="logoText">Breaking Bad</h2>
+                <div class="imgLogo w-25">
+                    <img src="images/icons8-walter-white-48.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--Start of Search Box-->
+     <div class="container">
+        <div class="search w-25 m-auto my-2">
+            <input onkeyup="Search(this.value)" id="searchInput" class="form-control" type="search" placeholder="Search">
+        </div>
+    </div>
+    <!--End of Search Box-->
+    <div id="data" class="items row p-5">
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
